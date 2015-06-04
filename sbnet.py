@@ -218,3 +218,6 @@ def client_handler(client_socket):
 
             # Send back the response
             client_socket.send(response)
+
+if __name__ == "__main__":
+    main()
