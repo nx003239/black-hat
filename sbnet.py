@@ -19,9 +19,9 @@ port = 0
 
 def usage():
     print """
-    SNB Net Tool
+    SB Net Tool
 
-        Usage: netcat.py -t target_host -p port"
+        Usage: sbnet.py -t target_host -p port"
         -l --listen                 - listen on [host]:[port] for
                                       incoming connections
         -e --execute=file_to_run    - execute a given file upon
@@ -31,9 +31,9 @@ def usage():
                                       a file and write to [destination]
 
         Examples:
-        netcat.py -t 192.168.0.1 -p 5555 -l -c
-        netcat.py -t 192.168.0.1 -p 5555 -l -u=c:\\target.exe
-        netcat.py -t 192.168.0.1 -p 5555 -l -e=\cat /etc/passwd echo 'ABCDEFGHI' | ./netcat.py -t 192.168.0.1 -p 135
+        sbnet.py -t 192.168.0.1 -p 5555 -l -c
+        sbnet.py -t 192.168.0.1 -p 5555 -l -u=c:\\target.exe
+        sbnet.py -t 192.168.0.1 -p 5555 -l -e=\cat /etc/passwd echo 'ABCDEFGHI' | ./sbnet.py -t 192.168.0.1 -p 135
     """
     sys.exit(0)
 
