@@ -114,7 +114,7 @@ def receive_from(connection):
     connection.settimeout(2)
 
     try:
-        # Keep reading into the buffer until theres no more data or timeout
+        # Keep reading into the buffer until there's no more data or timeout
         while True:
             data = connection.recv(4096)
 
