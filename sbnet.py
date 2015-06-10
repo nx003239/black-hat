@@ -206,7 +206,7 @@ def client_handler(client_socket):
 
         while True:
             # Show a simple prompt
-            client_socket.send("<SNB:#> ")
+            client_socket.send("<SB:#> ")
 
             # Now we recieve until we see a line feed (enter key)
             cmd_buffer = ""
